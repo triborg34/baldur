@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Baldur Gate: Descent into Avernus Guide',
       theme: ThemeData(primarySwatch: Colors.blue),
       home: const MyHomePage(),

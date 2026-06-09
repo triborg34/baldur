@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:baldur/decriptions.dart';
 import 'package:flutter/material.dart';
 
@@ -12,203 +14,203 @@ List chapters = [
 List gazetteer = [
  {
     "title": "FOUNDING BALDUR'S GATE",
-    "dec": foundingBaldursGate,
+    "desc": foundingBaldursGate,
     "page": 158,
   },
   {
     "title": "ORDER IN BALDUR'S GATE",
-    "dec": orderInBaldursGate,
+    "desc": orderInBaldursGate,
     "page": 158,
   },
   {
     "title": "BHAALSPAWN",
-    "dec": bhaalspawn,
+    "desc": bhaalspawn,
     "page": 159,
   },
   {
     "title": "BALDUR'S GATE TODAY",
-    "dec": baldursGateToday,
+    "desc": baldursGateToday,
     "page": 159,
   },
   {
     "title": "NEIGHBORS, RIVALS, AND ALLIES",
-    "dec": neighborsRivalsAndAllies,
+    "desc": neighborsRivalsAndAllies,
     "page": 160,
   },
   {
     "title": "CANDLEKEEP",
-    "dec": candlekeep,
+    "desc": candlekeep,
     "page": 161,
   },
   {
     "title": "ELTUREL",
-    "dec": elturel,
+    "desc": elturel,
     "page": 161,
   },
   {
     "title": "PORT NYANZARU",
-    "dec": portNyanzaru,
+    "desc": portNyanzaru,
     "page": 161,
   },
 
   {
     "title": "GOVERNMENT",
-    "dec": government,
+    "desc": government,
     "page": 161,
   },
   {
     "title": "COUNCIL OF FOUR",
-    "dec": councilOfFour,
+    "desc": councilOfFour,
     "page": 161,
   },
   {
     "title": "GRAND DUKE ULDER RAVENGARD",
-    "dec": grandDukeUlderRavengard,
+    "desc": grandDukeUlderRavengard,
     "page": 161,
   },
   {
     "title": "DUKE BELYNNE STELMANE",
-    "dec": dukeBelynneStelmane,
+    "desc": dukeBelynneStelmane,
     "page": 162,
   },
   {
     "title": "DUKE DILLARD PORTYR",
-    "dec": dukeDillardPortyr,
+    "desc": dukeDillardPortyr,
     "page": 162,
   },
   {
     "title": "DUKE THALAMRA VANTHAMPUR",
-    "dec": dukeThalamraVanthampur,
+    "desc": dukeThalamraVanthampur,
     "page": 162,
   },
   {
     "title": "MILITARY",
-    "dec": military,
+    "desc": military,
     "page": 162,
   },
   {
     "title": "THE FLAMING FIST",
-    "dec": flamingFist,
+    "desc": flamingFist,
     "page": 162,
   },
   {
     "title": "THE WATCH",
-    "dec": watch,
+    "desc": watch,
     "page": 162,
   },
   {
     "title": "LAW AND ORDER",
-    "dec": lawAndOrder,
+    "desc": lawAndOrder,
     "page": 163,
   },
   {
     "title": "CITIZENRY",
-    "dec": citizenry,
+    "desc": citizenry,
     "page": 164,
   },
   {
     "title": "COMMONERS AND CREWS",
-    "dec": commonersAndCrews,
+    "desc": commonersAndCrews,
     "page": 164,
   },
   {
     "title": "NOTEWORTHY LAWS",
-    "dec": noteworthyLaws,
+    "desc": noteworthyLaws,
     "page": 165,
   },
   {
     "title": "PATRIARS",
-    "dec": patriars,
+    "desc": patriars,
     "page": 165,
   },
   {
     "title": "PROMINENT PATRIAR FAMILIES",
-    "dec": prominentPatriarFamilies,
+    "desc": prominentPatriarFamilies,
     "page": 165,
   },
   {
     "title": "ECONOMY AND TRADE",
-    "dec": economyAndTrade,
+    "desc": economyAndTrade,
     "page": 166,
   },
   {
     "title": "PROFESSIONAL GUILDS",
-    "dec": professionalGuilds,
+    "desc": professionalGuilds,
     "page": 166,
   },
    {
     "title": "RELIGION",
-    "dec": religion,
+    "desc": religion,
     "page": 167,
   },
   {
     "title": "GOND",
-    "dec": gond,
+    "desc": gond,
     "page": 167,
   },
   {
     "title": "HELM",
-    "dec": helm,
+    "desc": helm,
     "page": 167,
   },
   {
     "title": "ILMATER",
-    "dec": ilmater,
+    "desc": ilmater,
     "page": 167,
   },
   {
     "title": "OGHMA",
-    "dec": oghma,
+    "desc": oghma,
     "page": 168,
   },
   {
     "title": "SIAMORPHE",
-    "dec": siamorphe,
+    "desc": siamorphe,
     "page": 168,
   },
   {
     "title": "TYMORA",
-    "dec": tymora,
+    "desc": tymora,
     "page": 168,
   },
   {
     "title": "UMBERLEE",
-    "dec": umberlee,
+    "desc": umberlee,
     "page": 168,
   },
   {
     "title": "DANGERS IN BALDUR'S GATE",
-    "dec": dangersInBaldursGate,
+    "desc": dangersInBaldursGate,
     "page": 169,
   },
   {
     "title": "THE GUILD",
-    "dec": theGuild,
+    "desc": theGuild,
     "page": 169,
   },
   {
     "title": "NINE-FINGERS KEENE",
-    "dec": nineFingersKeene,
+    "desc": nineFingersKeene,
     "page": 169,
   },
   {
     "title": "DEAD THREE CULTS",
-    "dec": deadThreeCults,
+    "desc": deadThreeCults,
     "page": 170,
   },
   {
     "title": "MURDER IN BALDUR'S GATE",
-    "dec": murderInBaldursGate,
+    "desc": murderInBaldursGate,
     "page": 170,
   },
   {
     "title": "CITY LANDMARKS",
-    "dec": cityLandmarks,
+    "desc": cityLandmarks,
     "page": 171,
   },
   {
     "title": "CITY GATES",
-    "dec": cityGates,
+    "desc": cityGates,
     "page": 171,
   },
   ];
@@ -527,6 +529,19 @@ List outerCity = [
   },
 ];
 
+
+List allsubject=gazetteer+upperCity+lowerCity+outerCity;
+
+Color getRandomColorFromIndex(int index) {
+  // Use index as seed for consistent random color
+  final random = Random(index);
+  return Color.fromRGBO(
+    random.nextInt(255), // Red
+    random.nextInt(255), // Green
+    random.nextInt(255), // Blue
+    1.0, // Opacity
+  );
+}
 
 
 List chcolors = [
