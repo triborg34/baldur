@@ -153,6 +153,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
                 itemCount: chapters.length,
               ),
+            ),SizedBox(height: 15,),
+                   Text(
+              "Baldur's Gate Gazetteer",
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.w900),
             ),
           ],
         ),
